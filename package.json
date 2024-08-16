@@ -1,5 +1,5 @@
 {
-  "name": "koa-better-http-proxy",
+  "name": "koa-simple-proxy-middleware",
   "version": "0.2.11",
   "description": "http proxy middleware for koa",
   "engines": {
