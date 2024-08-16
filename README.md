@@ -1,12 +1,12 @@
-# koa-better-http-proxy [![Build Status](https://travis-ci.org/nsimmons/koa-better-http-proxy.svg?branch=master)](https://travis-ci.org/nsimmons/koa-better-http-proxy) [![Downloads](https://img.shields.io/npm/dm/koa-better-http-proxy.png?style=flat-square)](https://www.npmjs.com/package/koa-better-http-proxy)
+# koa-simple-proxy-middleware [![Build Status](https://travis-ci.org/instabot42/koa-simple-proxy-middleware.svg?branch=master)](https://travis-ci.org/instabot42/koa-simple-proxy-middleware) [![Downloads](https://img.shields.io/npm/dm/koa-simple-proxy-middleware.png?style=flat-square)](https://www.npmjs.com/package/koa-simple-proxy-middleware)
 <a href="https://communityinviter.com/apps/koa-js/koajs" rel="KoaJs Slack Community">![KoaJs Slack](https://img.shields.io/badge/Koa.Js-Slack%20Channel-Slack.svg?longCache=true&style=for-the-badge)</a>
 
-Koa middleware to proxy request to another host and pass response back. Based on [express-http-proxy](https://github.com/villadora/express-http-proxy).
+Koa middleware to proxy request to another host and pass response back. Based on [nsimmons/koa-better-http-proxy](https://github.com/nsimmons/koa-better-http-proxy), which is based on [express-http-proxy](https://github.com/villadora/express-http-proxy).
 
 ## Install
 
 ```bash
-$ npm install koa-better-http-proxy --save
+$ npm install koa-simple-proxy-middleware --save
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ proxy(host, options);
 To proxy URLS to the host 'www.google.com':
 
 ```js
-var proxy = require('koa-better-http-proxy');
+var proxy = require('koa-simple-proxy-middleware');
 var Koa = require('koa');
 
 var app = new Koa();
@@ -153,7 +153,7 @@ user response.  There is currently no way to short-circuit this behavior.
 ```js
 app.use(proxy('www.google.com', {
   userResDecorator: function(proxyRes, proxyResData, ctx) {
-    data = JSON.parse(proxyResData.toString('utf8'));
+    const data = JSON.parse(proxyResData.toString('utf8'));
     data.newProperty = 'exciting data';
     return JSON.stringify(data);
   }
