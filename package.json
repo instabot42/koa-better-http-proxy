@@ -32,18 +32,16 @@
   },
   "devDependencies": {
     "body-parser": "^1.17.1",
-    "chai": "^3.5.0",
-    "cookie-parser": "^1.4.3",
-    "express": "^4.15.2",
-    "jscs": "^3.0.7",
-    "jshint": "^2.9.4",
-    "koa": "^2.2.0",
+    "chai": "^4.5.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "koa": "^2.15.3",
     "mocha": "^10.7.3",
     "supertest": "^7.0.0"
   },
   "dependencies": {
-    "es6-promise": "^3.3.1",
-    "raw-body": "^2.2.0"
+    "es6-promise": "^4.2.8",
+    "raw-body": "^3.0.0"
   },
   "contributors": []
 }
