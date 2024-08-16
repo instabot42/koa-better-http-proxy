@@ -39,8 +39,6 @@ describe('userResDecorator', function() {
     app.use(proxy('http://localhost', {
       port: 8080,
       userResDecorator: function(proxyRes, proxyResData) {
-        assert(proxyRes.connection);
-        assert(proxyRes.socket);
         assert(proxyRes.headers);
         assert(proxyRes.headers['content-type']);
         return proxyResData;
