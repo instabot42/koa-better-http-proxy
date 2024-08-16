@@ -1,6 +1,6 @@
 {
   "name": "koa-simple-proxy-middleware",
-  "version": "0.2.12",
+  "version": "0.2.13",
   "description": "http proxy middleware for koa",
   "engines": {
     "node": ">=10.0.0"
