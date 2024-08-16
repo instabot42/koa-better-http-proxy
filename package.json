@@ -1,6 +1,6 @@
 {
   "name": "koa-better-http-proxy",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "description": "http proxy middleware for koa",
   "engines": {
     "node": ">=10.0.0"
@@ -23,8 +23,8 @@
     "koa-better-http-proxy"
   ],
   "author": {
-    "name": "nsimmons",
-    "email": "nick.simmons.514@gmail.com"
+    "name": "instabot",
+    "email": "instabot@example.com"
   },
   "license": "MIT",
   "bugs": {
